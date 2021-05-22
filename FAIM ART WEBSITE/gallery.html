@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faim Arts-gallery</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="lightgallery.css">
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <div class="logo">
+            <div id="logoname">
+                <h3>Faim arts</h3>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+
+    <section class="mysection">
+        <div class="reference">A collation of some of my</br> art works</div>
+        <div class="instruction"><p>Click to zoom</p></div>
+        <div class="gallery" id="lightgallery">
+            <div class="img" href="images/Gallery/IMG_20210318_080119-02.jpg">
+                <img src="images/Gallery/IMG_20210318_080119-02.jpg" alt="gallery portrait drawing 6 ">
+            </div>
+            <div class="img" href="images/Gallery/IMG_20201212_161801-01.jpg">
+                <img src="images/Gallery/IMG_20201212_161801-01.jpg" alt="gallery portrait drawing 3 ">
+            </div>
+            <div class="img" href="images/Gallery/IMG_20210205_153906-02.jpg">
+                <img src="images/Gallery/IMG_20210205_153906-02.jpg" alt="gallery portrait drawing 4 ">
+            </div>   
+            <div class="img" href="images/Gallery/IMG_20210214_095825_442-01.jpg">
+                <img src="images/Gallery/IMG_20210214_095825_442-01.jpg" alt="gallery portrait drawing 4 ">
+            </div>
+            <div class="img" href="images/Gallery/20210113_161728-01.jpg">
+                <img src="images/Gallery/20210113_161728-01.jpg" alt="gallery portrait drawing 1 ">
+            </div>
+            <div class="img" href="images/Gallery/IMG_20201204_123936_784-03.jpg">
+                <img src="images/Gallery/IMG_20201204_123936_784-03.jpg" alt="gallery portrait drawing 2 ">
+            </div>
+        </div>
+
+
+        <div class="calltoactions">
+            <div class="calltoactions">
+                <div class="book"><a href="contact.html">Book a portrait</a></div>
+                <div class="shoplink"><a href="shop.html">Go-to-shop</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script src="lightgallery.min.js"></script>
+<script src="index.js"></script>
+<script src="gallery.js"></script>
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'));
+</script>
+
+
+</body>
+</html>

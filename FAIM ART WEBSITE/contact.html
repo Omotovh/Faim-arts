@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faim Arts-Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="106778491296369"
+        logged_in_greeting="Hi! How can I help you?" logged_out_greeting="Hi! How can I help you?">
+    </div>
+    <nav class="main-nav" id="main-nav">
+        <div class="logo">
+            <div id="logoname">
+                <h3>Faim arts</h3>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+
+
+    <section class="mysection">
+        <form id="fs-frm" name="faim arts contactform" method="post" data-netlify="true" enctype="application/x-www-form-urlencoded">
+            <fieldset id="fs-frm-input">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="replyto" id="email-address" placeholder="email@domain.tld" required>
+                <label for="subject">Subject</label>
+                <select name="subject" id="su]" required>
+                <option value="Select" selected disabled>Select</option>
+                <option value="Sponsor">I want to become a sponsor</option>
+                <option value="Buy">I want to become an art collector</option>
+                <option value="Commission">Commission an artwork for me</option>
+                <option value="Mentorship">I need mentoring</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo culpa molestias, exercitationem enim velit dolorem similique animi placeat doloribus voluptates veritatis quibusdam numquam officia, harum quia iusto dicta? Minima!" required=""></textarea>
+            </fieldset>
+            <input type="submit" value="Send Message" >
+        </form>
+
+
+        <div class="pay"><a href="https://flutterwave.com/pay/faimartsfmby" target="blank">Pay here</a></div>
+    </section>
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v10.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="index.js"></script>
+</body>
+</html>

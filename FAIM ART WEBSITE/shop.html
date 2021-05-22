@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faim Arts-Shop</title>
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <div class="logo">
+            <div id="logoname">
+                <h3>Faim arts</h3>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+
+    <section class="mysection">
+        <div class="reference">These are art pieces i have</br>for sale</div>
+        <div class="art">
+            <div class="piece">
+                <img src="images/Gallery/IMG_20210318_080119-02.jpg" alt="art piece for sale">
+                <div class="details">
+                    <h4>A drawing of Gal Gadot as Diana Prince, the wonder woman</h4>
+                    <p>Graphite and charcoal pencils on Pellican paper</p>
+                    <p>Paper size: 11.69in x 16.53in (A3)</p>
+                    <p>Original copy</p>
+                    <p>Framed and varnished against age elements on purchase</p>
+                    <p>Free delivery to anywhere on purchase via DHL</p>
+                    <h4><em>Minimum price of $150</em></h4>
+                </div>
+                <h3 class="bidbtn"><a href="bid1.html">Make a bid</a></h3>
+            </div>
+        </div>
+
+
+       <div class="accordionbody">
+            <h2>Frequently asked questions</h2>
+            <div class="accordion-container">
+                <div class="ac">
+                    <h4 class="ac-header">
+                        <button class="ac-trigger">How do I pay for an art piece?</button>
+                    </h4>
+                    <div class="ac-panel">
+                        <p class="ac-text">If you're paying internationally, I accept
+                            payments in up to 53 currencies in the amount equivalent to the payable sum through Flutterwave. Simply go to the contact page and 
+                            click the "pay here button".
+                            Local payments can be made to my bank account or via Flutterwave on the contact page.
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                     <h2 class="ac-header">
+                        <button class="ac-trigger">How do you charge for commissions?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">There is no fixed price for commissioned work. The amount I charge depends on
+                            a combination of factors like paper size, complexity of drawing the piece and the urgency.
+                            Contact me through the contact page for further discussions and I'll help you determine a price.
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button class="ac-trigger">How do I get my artwork once I pay?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">Once you pay for an artpiece, the piece will be packaged and sent
+                            over to address you provide me via mail or chat irrespective of your country of residence.
+                        </p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button class="ac-trigger">How long from when I pay till I get my art piece?</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">All things being equal, your art piece will arrive at your location
+                            <em>within</em> 5 working days from when you make a purchase or a commission is
+                            completed and fully paid for.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="accordion.min.js"></script>
+<script src="index.js"></script>
+<script>let accordion = new Accordion('.accordion-container', {
+
+        // animation duration in ms {number} 
+        duration: 400,
+        // allow collapse expanded panel {boolean}
+        collapse: true,
+
+        // show multiple elements at the same time {boolean}
+        showMultiple: true,
+    });
+</script>
+</body>
+</html>
